@@ -1,5 +1,6 @@
-// your name
-// class
+// Kyle Waltz
+// 8 Ne
+
 import java.io.*;
 import java.net.*;
 import java.util.*;
@@ -12,10 +13,12 @@ public class WordCount {
         
         // create an ArrayList of type String to store the unique words
 //-----> YOUR CODE HERE
+      ArrayList<String> uniqueWords = new ArrayList<String>(); 
         
         // create an ArrayList of type Integer to store the count of each time the unique word appears
 //-----> YOUR CODE HERE
-
+        ArrayList<Integer> count = new ArrayList<Integer>();
+        
         while(input.hasNextLine()) {
             // get the next line from the input file
             txt = input.nextLine();
@@ -26,9 +29,11 @@ public class WordCount {
             
             // call your method countUniqueWords
 //-----> YOUR CODE HERE
+            countUniqueWords();
             
             // print out number of unique words found, like: "Number of unique words: 23"
 //-----> YOUR CODE HERE
+            System.out.println("Number of unique words is: " + index);
 
             System.out.println();
 
